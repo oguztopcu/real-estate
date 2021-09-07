@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+    nginx:
+        build:
+            context: ./docker/nginx
+        volumes:
+            - ./:/var/www/app
+        ports:
+            - "1337:80"
+        links:
+            - php
+        networks:
+            - app
+
+    php:
+        build:
+            context: ./docker/php
+        volumes:
+            - ./:/var/www/app
+        networks:
+            - app
+
+networks:
+    app:
