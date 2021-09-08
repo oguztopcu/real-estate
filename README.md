@@ -27,10 +27,18 @@ HOST=host.docker.internal
 and you should run on your terminal at project directory 
 
 ```text
+composer install
 php artisan key:generate
 php artisan jwt:secret
 php artisan migrate
 ```
+
+If you haven't installed php, you connect to docker container you can run command
+
+````text
+docker ps (Running container lists)
+docker exec -it {containerId} bash
+````
 
 Finally!
 
