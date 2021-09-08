@@ -15,13 +15,21 @@ git clone git@github.com:oguztopcu/real-estate.git
 
 move to project directory
 ```text
-cd /path/to/your/real-state
+cd /path/to/your/real-estate
 docker-compose up -d
 ```
 
 If you use without docker mysql, you should be change host
 ```text
 HOST=host.docker.internal
+```
+
+and you should run on your terminal at project directory 
+
+```text
+php artisan key:generate
+php artisan jwt:secret
+php artisan migrate
 ```
 
 Finally!
