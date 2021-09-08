@@ -46,23 +46,21 @@
 							"urlencoded": [
 								{
 									"key": "email",
-									"value": "oguztopcu7@gmail.com",
+									"value": "",
 									"type": "text"
 								},
 								{
 									"key": "password",
-									"value": "admin*!!",
+									"value": "",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "http://localhost:1337/api/auth/login",
-							"protocol": "http",
+							"raw": "{{API_URL}}/api/auth/login",
 							"host": [
-								"localhost"
+								"{{API_URL}}"
 							],
-							"port": "1337",
 							"path": [
 								"api",
 								"auth",
@@ -84,12 +82,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:1337/api/auth/logout",
-							"protocol": "http",
+							"raw": "{{API_URL}}/api/auth/logout",
 							"host": [
-								"localhost"
+								"{{API_URL}}"
 							],
-							"port": "1337",
 							"path": [
 								"api",
 								"auth",
@@ -124,12 +120,10 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:1337/api/auth/refresh-token",
-							"protocol": "http",
+							"raw": "{{API_URL}}/api/auth/refresh-token",
 							"host": [
-								"localhost"
+								"{{API_URL}}"
 							],
-							"port": "1337",
 							"path": [
 								"api",
 								"auth",
