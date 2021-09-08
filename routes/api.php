@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -23,4 +24,14 @@ Route::prefix('contacts')->group(function () {
     Route::put('/{contactId}', [ContactController::class, 'update']);
 
     Route::delete('/{contactId}', [ContactController::class, 'destroy']);
+});
+
+Route::prefix('appointments')->group(function () {
+    Route::get('/', [AppointmentController::class, 'index']);
+
+    Route::post('/', [AppointmentController::class, 'store']);
+
+    Route::put('/{appointmentId}', [AppointmentController::class, 'update']);
+
+    Route::delete('/{appointmentId}', [AppointmentController::class, 'destroy']);
 });
