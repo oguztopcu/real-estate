@@ -1,7 +1,6 @@
 ## Real Estate v1
 
 ## Requirements
-If you install your computer
 ```text
 Docker version 20.10.8
 docker-compose version 1.29.2
